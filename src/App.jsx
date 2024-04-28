@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
 
 function App() {
-  // Crear un estado llamado miTexto
   const [miTexto, setMiTexto] = useState('');
 
-  // Crear función handleText
   const handleText = (event) => {
-    // Tomar el valor de la caja de entrada
     const textoIngresado = event.target.value;
-    // Actualizar el estado miTexto con el valor del texto ingresado
     setMiTexto(textoIngresado);
   };
 
